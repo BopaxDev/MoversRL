@@ -19,12 +19,12 @@ This __research project__ aims to provide a *suitable* and *state-of-art* approa
 In particular, through __Deep Reinforcement Learning__ modelling, the research try to offer *insights* on __financial trading scenarios__, capabilities and tecniques designed to maximise profits over the *long-run*.
 
 Currenly, the project is structured in **3 different packages**:
-- _models_
+- ___models___
     - It defines *modules* and *trading strategies* to operate on the financial markets
     - The __research__ is not focused on this side, we only want to define a *common framework* to streamline thw work 
-- _movers_
+- ___movers___
     - It defines modules to perform *backtesting* in __trading environments__
-- *risk_management*
+- ***risk_management***
     - It defines the *risk management* __models__
     - The research, as already mentioned, aims to focus on the *risk management*, the model will be __tested__ over different trading environments and, its __performances__ will be integrated and analysed through the models previously defined
 
