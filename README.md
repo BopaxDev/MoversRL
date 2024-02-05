@@ -9,42 +9,23 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Installation](#installation)
-    - [On Windows](#installation-on-windows)
-    - [On Windows-based Docker Container](#installation-as-a-windows-based-docker-container)
-- [Future Versions](#future-versions)
 
 ## Introduction
 
 > [!NOTE]
 > Currently working on the 'develop' branch
 
-The project aims to unify Reinforcement Learning and Deep Learning.
-More specifically, we are going to develop an agent able to work in a financial environment.
+This __research project__ aims to provide a *suitable* and *state-of-art* approaches to *risk management* and *backtesting* in __investment portfolio__.
+In particular, through __Deep Reinforcement Learning__ modelling, the research try to offer *insights* on __financial trading scenarios__, capabilities and tecniques designed to maximise profits over the *long-run*.
 
-More details will be given with the next commits.
+Currenly, the project is structured in **3 different packages**:
+- _models_
+    - It defines *modules* and *trading strategies* to operate on the financial markets
+    - The __research__ is not focused on this side, we only want to define a *common framework* to streamline thw work 
+- _movers_
+    - It defines modules to perform *backtesting* in __trading environments__
+- *risk_management*
+    - It defines the *risk management* __models__
+    - The research, as already mentioned, aims to focus on the *risk management*, the model will be __tested__ over different trading environments and, its __performances__ will be integrated and analysed through the models previously defined
 
-![Alt text](docs/resources/images/Scenario_trasparency_white.svg "Scenario")
-
-## Installation
-
-As already mentioned, due to the MetaTrader5 API (which currently represents the only API Available for __*Trading Execution*__).
-MetaTrader5 is the most used trading platform on CFDs Broker.
-
-> [!NOTE]
-> __*CFD*__, *Credit For Difference*, is a contract between a buyer and a seller that stipulates that the buyer must pay the seller the difference between the current value of an asset and its value at contract time.
-
-### Installation on Windows
-
-
-
-### Installation as a Windows-based Docker Container
-
-In the repository, a __compose.yaml__ file is available to run all the services necessary to let platform properly work.
-
-## Future Versions
-
-- New API Supporting will be provided, in particular: __*TWS API*__ (Trader Workstation API)
-- Introduce __Linux__ support for
-    - __Machine__ Instance
-    - __Docker__ Instance
+More details will be given over the next commits.
