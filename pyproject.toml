@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MoversRL"
+description = ""
+authors = [
+  { name = "Mario Nicolò De Matteis", email = "marionicdematteis@gmail.com" },
+]
+maintainers = [
+  { name = "Mario Nicolò De Matteis", email = "marionicdematteis@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dynamic=["version"]
+keywords = [
+]
+classifiers = [
+]
+
+dependencies = [
+    "datasets==2.14.4",
+    "hydra-core==1.3",
+    "lightning==2.0.6",
+    "numpy==1.25",
+    "omegaconf==2.3.0",
+    "pydantic==1.10.12",
+    "torch==2.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "flake8",
+  "isort",
+  "pre-commit",
+  "pytest",
+  "pytest-asyncio",
+  "pytest-cov",
+]
+docs = [
+  "mkdocs",
+  "mkdocs-material",
+  "mkdocstrings[python]",
+  "pytkdocs[numpy-style]",
+]
+test = [
+  "pytest",
+  "pytest-asyncio",
+  "pytest-cov",
+]
+
+[project.urls]
+Repository = "https://github.com/BopaxDev/MoversRL"
+
+[tool.black]
+line-length = 88
+
+[tool.coverage.report]
+exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
